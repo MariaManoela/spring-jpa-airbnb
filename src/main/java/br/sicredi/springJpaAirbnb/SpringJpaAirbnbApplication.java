@@ -15,15 +15,15 @@ public class SpringJpaAirbnbApplication {
 		SpringApplication.run(SpringJpaAirbnbApplication.class, args);
 
 	}
-
-	@Bean
-	public CommandLineRunner demo(ImovelRepository repository) {
-
-		return (args) -> {
-			// save a few customers
-			repository.save(new Imovel("Jack", 200, TiposImovel.CASA));
-			repository.save(new Imovel("Chloe", 678, TiposImovel.CASA));
-			repository.save(new Imovel("Kim", 345, TiposImovel.APARTAMENTO));
-		};
-	}
+//
+//	@Bean
+//	public CommandLineRunner demo(ImovelRepository repository) {
+//
+//		return (args) -> {
+//			// save a few customers
+//			repository.save(new Imovel("Jack", 200, TiposImovel.CASA));
+//			repository.save(new Imovel("Chloe", 678, TiposImovel.CASA));
+//			repository.save(new Imovel("Kim", 345, TiposImovel.APARTAMENTO));
+//		};
+//	}
 }
