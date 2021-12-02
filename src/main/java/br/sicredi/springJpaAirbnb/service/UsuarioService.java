@@ -5,7 +5,6 @@ import br.sicredi.springJpaAirbnb.repository.UsuarioRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
@@ -30,5 +29,13 @@ public class UsuarioService {
 
     public void deleteById(Long id) {
         usuarioRepository.deleteById(id);
+    }
+
+    public String validaUsuario(Usuario usuario) {
+        if (usuario.equals(usuarioRepository.findAll())){
+            return "Não logado!";
+        }else{
+            return "Logado!";
+        }
     }
 }

@@ -4,10 +4,7 @@ package br.sicredi.springJpaAirbnb.domain;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @Getter
@@ -18,6 +15,7 @@ public class Usuario {
     private Long id;
     private String usuario;
     private String senha;
+//    @Enumerated(EnumType.STRING)
     private TiposUsuario tipo;
 
     public Usuario() {}

@@ -3,10 +3,7 @@ package br.sicredi.springJpaAirbnb.domain;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 @Getter
@@ -18,6 +15,7 @@ public class Imovel {
     private String nome;
     private String cidade;
     private double valor;
+//    @Enumerated(EnumType.STRING)
     private TiposImovel tipo;
 
     public Imovel(){}
