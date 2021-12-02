@@ -21,8 +21,8 @@ public class ImovelController {
     }
 
     @GetMapping("/tipo")
-    public List<Imovel> findByType(@RequestParam TiposImovel tipo) {
-        return imovelService.findByType(tipo);
+    public List<Imovel> findByTipo(@RequestParam TiposImovel tipo) {
+        return imovelService.findByTipo(tipo);
     }
 
     @PostMapping

@@ -19,7 +19,7 @@ public class ImovelService {
         return (List<Imovel>) imovelRepository.findAll();
     }
 
-    public List<Imovel> findByType(TiposImovel tipo) {
+    public List<Imovel> findByTipo(TiposImovel tipo) {
         return imovelRepository.findByTipo(tipo);
     }
 
